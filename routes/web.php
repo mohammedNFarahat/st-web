@@ -35,11 +35,7 @@ Route::get("name/{gg}",function ($id){
      dd($id .$gd);
 
  });
-/*
- Route::get('blog',function (){
-    return redirect()-> route('my_new_blog');
- });
-*/
+
  /* نقل من راوت الي راوت أخر */
  Route::redirect('blog' ,'new_blog',301);
  Route::  get('new_blog',function (){
@@ -93,3 +89,4 @@ Route::middleware('throttle:3,1')->group(function (){
 
 
 );
+
